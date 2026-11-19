@@ -33,6 +33,8 @@ After setup on Windows, `./run.ps1` starts the app and builds the database if it
 
 The default window is **1 December 2009–30 November 2011**, covering complete months. The last nine observed days of December 2011 are available through the date filter and visibly flagged as a partial month.
 
+![Verified dashboard overview in a compact browser window](docs/screenshots/dashboard.jpg)
+
 ## Review the work
 
 | Evidence | Location |

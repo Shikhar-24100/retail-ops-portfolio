@@ -1,0 +1,23 @@
+{
+  "source_url": "https://archive.ics.uci.edu/static/public/502/online+retail+ii.zip",
+  "source_sha256": "bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980",
+  "raw_rows": 1067371,
+  "cross_sheet_repeated_rows_removed": 22523,
+  "rows_after_overlap_resolution": 1044848,
+  "duplicate_candidate_rows_retained": 11812,
+  "dispositions": {
+    "sale": 1014945,
+    "return_or_cancellation": 17973,
+    "non_merchandise": 5992,
+    "nonpositive_price": 5938
+  },
+  "sales_gbp": 19699784.97,
+  "signed_returns_cancellations_gbp": -719656.34,
+  "sales_gbp_without_duplicate_candidates": 19642692.15,
+  "sales_rows_missing_customer": 226758,
+  "sales_gbp_missing_customer": 2574858.74,
+  "observed_start": "2009-12-01",
+  "observed_end": "2011-12-09",
+  "default_reporting_end": "2011-11-30",
+  "scope": "All source dates; report CSVs use complete months through 2011-11-30"
+}

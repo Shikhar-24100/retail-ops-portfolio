@@ -1,0 +1,12 @@
+[theme]
+primaryColor = "#E62A69"
+backgroundColor = "#FCFAF7"
+secondaryBackgroundColor = "#F1ECE7"
+textColor = "#21242C"
+font = "sans serif"
+
+[server]
+headless = true
+
+[browser]
+gatherUsageStats = false

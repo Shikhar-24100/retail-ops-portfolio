@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "forecast_rows_checked": 53000,
+  "forecast_score_rows_checked": 70,
+  "weekly_source_cells_checked": 5200,
+  "inventory_ledger_rows_checked": 25200,
+  "inventory_policy_scenarios_checked": 18,
+  "checks": [
+    "SQL source to weekly panel",
+    "Forecast truth alignment and unique keys",
+    "Chronological forecast origins",
+    "Independent baseline arithmetic and error metrics",
+    "Validation-only model selection and buffer calibration",
+    "Common warm-up initial stock",
+    "Demand and stock conservation",
+    "Lead-time receipts and purchase-order balances",
+    "Forecast-to-inventory order-up-to equations",
+    "Holdout service and assumed-cost accounting"
+  ]
+}

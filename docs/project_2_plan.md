@@ -1,6 +1,6 @@
 # Project 2: demand forecasting and inventory decisions
 
-**Status: planned.** This document defines the independent work needed before the second project belongs on a resume.
+**Status: implemented.** This was the original scope. The completed [methodology](forecasting_methodology.md), [measured results](forecasting_review.md), and [interview guide](forecasting_interview_guide.md) document the final implementation. Forecast accuracy improves against the stronger baseline; the inventory candidate underperforms, and that result is preserved.
 
 ## Business question
 

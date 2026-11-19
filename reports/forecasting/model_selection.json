@@ -1,0 +1,20 @@
+{
+  "baseline": "moving_average_4",
+  "candidate": "ridge_alpha_100",
+  "criterion": "Lowest pooled one-week WAPE on 16 validation origins; ties by method name",
+  "candidate_search": [
+    "seasonal_blend_25",
+    "seasonal_blend_50",
+    "seasonal_blend_75",
+    "ridge_alpha_1",
+    "ridge_alpha_10",
+    "ridge_alpha_100"
+  ],
+  "baseline_search": [
+    "moving_average_4",
+    "seasonal_naive_52"
+  ],
+  "selected_before_holdout": true,
+  "train_through_week": "2011-01-24",
+  "validation_through_week": "2011-05-16"
+}

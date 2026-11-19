@@ -1,0 +1,66 @@
+{
+  "source_sha256": "bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980",
+  "daily_input_sha256": "d6ab35b38b8a1c5a3e737905ac9ae7a4324e8e4e9a475f1953fac28d1dda1c88",
+  "population": {
+    "market": "United Kingdom",
+    "complete_weeks": 104,
+    "observed_skus_complete_calendar": 4866,
+    "eligible_skus": 789,
+    "selected_skus": 50,
+    "training_uk_units": 5039410,
+    "selected_training_units": 1053996,
+    "training_unit_coverage": 0.20915067438450136,
+    "selection_rule": "Top 50 by training units among SKUs with sales in >=40 of 60 training weeks and >=6 of the last 8 training weeks"
+  },
+  "first_week": "2009-12-07",
+  "last_week": "2011-11-28",
+  "splits": {
+    "training": [
+      "2009-12-07",
+      "2011-01-24"
+    ],
+    "validation": [
+      "2011-01-31",
+      "2011-05-16"
+    ],
+    "warmup": [
+      "2011-05-23",
+      "2011-07-11"
+    ],
+    "holdout": [
+      "2011-07-18",
+      "2011-11-28"
+    ]
+  },
+  "labels": {
+    "moving_average_4": "4-week moving average",
+    "seasonal_naive_52": "52-week seasonal naive",
+    "seasonal_blend_25": "Seasonal blend (25% seasonal)",
+    "seasonal_blend_50": "Seasonal blend (50% seasonal)",
+    "seasonal_blend_75": "Seasonal blend (75% seasonal)",
+    "ridge_alpha_1": "Pooled log-ridge (alpha 1)",
+    "ridge_alpha_10": "Pooled log-ridge (alpha 10)",
+    "ridge_alpha_100": "Pooled log-ridge (alpha 100)"
+  },
+  "default_scenario": {
+    "lead_time_weeks": 2,
+    "buffer_quantile": 0.95,
+    "holding_cost_per_unit_week_gbp": 0.05,
+    "lost_unit_penalty_gbp": 1.0
+  },
+  "review_period_weeks": 1,
+  "warmup_weeks": 8,
+  "holdout_weeks": 20,
+  "forecast_horizons": 5,
+  "weekly_refit": true,
+  "limitations": [
+    "Paid recorded sales proxy for demand; historical availability and lost sales unobserved",
+    "Missing SKU-weeks zero-filled as no recorded paid sales; not proof of zero demand",
+    "Giftware and wholesale retailer; not fashion demand or Myntra data",
+    "Validation residual windows overlap and pool normalised errors across SKUs",
+    "Buffer quantile is a calibration setting, not a guaranteed fill rate",
+    "Inventory has assumed fixed lead times, unlimited supply and no minimum order quantities",
+    "Costs are hypothetical uniform rates; procurement, ordering, expiry and return flows excluded",
+    "Holdout simulates sequential decisions with weekly observed updates; no hyperparameter retuning"
+  ]
+}

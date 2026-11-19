@@ -48,6 +48,8 @@ Use the sidebar navigation to open the second project:
 
 The study selects 50 active UK SKUs using the first 60 complete weeks only. It uses 16 validation weeks, eight inventory warm-up weeks, and 20 held-out evaluation weeks. Inventory outcomes are simulations with hypothetical costs and no claim of actual stockout reduction.
 
+![Verified inventory scenario with explicit assumptions and candidate/baseline comparison](docs/screenshots/inventory.jpg)
+
 ## Review the work
 
 | Evidence | Location |

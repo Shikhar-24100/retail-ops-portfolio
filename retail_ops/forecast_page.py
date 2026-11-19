@@ -17,7 +17,7 @@ h1 {letter-spacing:-1px;font-weight:750!important}
 @media(max-width:1000px){[data-testid="stHorizontalBlock"]{flex-wrap:wrap}
 [data-testid="stColumn"]{min-width:min(100%,240px);flex:1 1 240px!important}}
 </style>""", unsafe_allow_html=True)
-st.markdown('<div class="eyebrow">PROJECT 02 / FORECASTING & INVENTORY</div>', unsafe_allow_html=True)
+st.markdown('<div class="eyebrow">FORECASTING & INVENTORY</div>', unsafe_allow_html=True)
 st.title("Forecast accuracy meets inventory decisions")
 if not (OUT / "metadata.json").exists():
     st.info("Build this project first: python -m retail_ops.build_forecasting")
@@ -180,4 +180,4 @@ with design_tab:
     st.subheader("Training-only SKU selection")
     st.dataframe(data["selection"],hide_index=True,width="stretch")
     download(data["selection"],"training_selected_skus")
-    st.caption("Source: Chen, D. (2012), Online Retail II, UCI, CC BY 4.0. The common data audit and cleaning decisions are documented in project 1.")
+    st.caption("Source: Chen, D. (2012), Online Retail II, UCI, CC BY 4.0. The common data audit and cleaning decisions are documented in Sales & customers.")

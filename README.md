@@ -2,9 +2,9 @@
 
 Retail sales, customer analytics, demand forecasting and inventory decisions, built by **Shikhar Shrivastav** as a business operations portfolio. Two substantial projects share one audited public transaction warehouse.
 
-**Project 1:** an interactive sales dashboard, seven SQL analyses, a reproducible data pipeline, audited metric definitions, and five historical business recommendations.
+**Sales & customer analytics:** an interactive sales dashboard, seven SQL analyses, a reproducible data pipeline, audited metric definitions, and five historical business recommendations.
 
-**Project 2:** training-only SKU selection, rolling-origin forecast evaluation against two baselines, frozen model selection, and 18 audited inventory policy/scenario replays. The candidate improves one-week WAPE from **55.11% to 52.00%** against the stronger baseline, but performs worse on inventory service and assumed cost. That negative operational finding is retained.
+**Demand forecasting & inventory decisions:** training-only SKU selection, rolling-origin forecast evaluation against two baselines, frozen model selection, and 18 audited inventory policy/scenario replays. The candidate improves one-week WAPE from **55.11% to 52.00%** against the stronger baseline, but performs worse on inventory service and assumed cost. That negative operational finding is retained.
 
 This uses public UK giftware sales. It does not contain Myntra data, fashion categories, live stock levels, or measured commercial impact.
 
@@ -40,7 +40,7 @@ The default window is **1 December 2009–30 November 2011**, covering complete 
 
 ## Explore Forecast & inventory
 
-Use the sidebar navigation to open the second project:
+Use the sidebar navigation to open Forecast & inventory:
 
 - **Forecast evaluation:** actual versus predicted weekly units, validation search, untouched holdout metrics, horizon-specific errors, SKU failures, and downloadable forecasts.
 - **Inventory scenarios:** lead time and safety-buffer controls, fill rate, unserved replay units, inventory levels, cost sensitivity, and the receive/order/fulfil ledger.
@@ -59,7 +59,7 @@ The study selects 50 active UK SKUs using the first 60 complete weeks only. It u
 | Interview explanation and questions | [Interview guide](docs/interview_guide.md) |
 | Forecasting design, loss functions and inventory equations | [Forecasting methodology](docs/forecasting_methodology.md) |
 | Forecast and inventory results, including the failed operational improvement | [Forecasting business review](docs/forecasting_review.md) |
-| Second-project interview explanation | [Forecasting interview guide](docs/forecasting_interview_guide.md) |
+| Forecasting interview explanation | [Forecasting interview guide](docs/forecasting_interview_guide.md) |
 | Actual SQL | [sql/](sql/) |
 | Regenerated historical result tables | [reports/](reports/) |
 | Data quality and source checksum | [reports/data_quality.json](reports/data_quality.json) |
@@ -78,7 +78,7 @@ Checks cover hand-verifiable invoices, future-data leakage, training-only select
 
 `data/raw/online_retail_II.xlsx` → normalized source cache → disposition and overlap audit → `sales`, `returns`, `orders` in `data/processed/retail.sqlite` → shared SQL → dashboard and historical CSVs.
 
-`sales` and `returns` contain merchandise line items. `orders` aggregates positive merchandise lines to one row per invoice. Raw source row and sheet references survive in both line tables. Daily observed units by SKU and market feed project 2's complete-week panel. Its absent SKU-weeks are treated as no recorded paid sales, explicitly not proof of zero unconstrained demand.
+`sales` and `returns` contain merchandise line items. `orders` aggregates positive merchandise lines to one row per invoice. Raw source row and sheet references survive in both line tables. Daily observed units by SKU and market feed the forecasting study's complete-week panel. Its absent SKU-weeks are treated as no recorded paid sales, explicitly not proof of zero unconstrained demand.
 
 ## Source and attribution
 

@@ -157,7 +157,7 @@ def build():
     for name in ["kpis", "monthly", "products", "segments", "cohorts", "countries", "price_variation"]:
         result = query(name)
         result.to_csv(report_dir / f"{name}.csv", index=False)
-    # Shared input for project 2. Missing dates are absent, not presumed zero demand.
+    # Shared forecasting input. Missing dates are absent, not presumed zero demand.
     with sqlite3.connect(DB) as con:
         pd.read_sql_query("""SELECT date, sku, country, SUM(quantity) AS units,
             SUM(value_mills)/1000.0 AS gross_sales_gbp

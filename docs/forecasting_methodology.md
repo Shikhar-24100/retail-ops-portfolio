@@ -2,7 +2,7 @@
 
 ## Scope and calendar
 
-Use the same audited UCI source as project 1, restricted to **United Kingdom paid merchandise sales**. Form Monday–Sunday weeks. Exclude the partial first week (source starts Tuesday 1 December 2009) and partial final week (source ends Friday 9 December 2011). The study has 104 full weeks, beginning 7 December 2009 and ending 4 December 2011.
+Use the audited UCI source shared with the sales analysis, restricted to **United Kingdom paid merchandise sales**. Form Monday–Sunday weeks. Exclude the partial first week (source starts Tuesday 1 December 2009) and partial final week (source ends Friday 9 December 2011). The study has 104 full weeks, beginning 7 December 2009 and ending 4 December 2011.
 
 Missing SKU-weeks are filled with zero **recorded paid units**. This is a modelling assumption about the transaction record. It cannot distinguish no demand, unavailable stock, a product not listed, or missing records. Free units and reversed quantities do not enter the target. Gross paid sales may include invoices later cancelled; this is not unconstrained or net customer demand.
 

@@ -29,7 +29,7 @@ Source tables: [KPIs](../reports/kpis.csv), [cohorts](../reports/cohorts.csv). A
 
 **Action:** start a replenishment review with a cumulative-sales tier rather than assuming a handful of bestsellers dominates the business. Add variability, margin, supplier lead time and availability before assigning stock targets.
 
-**Next measurement:** project 2 should compare forecast error and simulated fill rate/average stock across selected SKU groups. This analysis does not establish the right inventory quantity or a stockout reduction.
+**Next measurement:** compare forecast error and simulated fill rate/average stock across selected SKU groups in the forecasting study. This analysis does not establish the right inventory quantity or a stockout reduction.
 
 Source: [SKU results](../reports/products.csv), sorted by gross sales. The 80% boundary includes the first SKU that crosses the threshold.
 
@@ -49,7 +49,7 @@ Source: [Segments](../reports/segments.csv). Segment thresholds are descriptive 
 
 **Action:** review peak-period staffing, picking and replenishment capacity using order/unit workloads as well as sales value. Examine daily peaks before making a staffing plan. Avoid treating a peak-to-trough comparison as annual business growth.
 
-**Next measurement:** use rolling-origin forecasts and explicit forecast horizons in project 2. Two years of giftware seasonality do not establish future fashion demand.
+**Next measurement:** use rolling-origin forecasts and explicit forecast horizons in the forecasting study. Two years of giftware seasonality do not establish future fashion demand.
 
 Source: [Monthly trading](../reports/monthly.csv). The partial December 2011 is excluded from these comparisons.
 

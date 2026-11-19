@@ -56,4 +56,4 @@ To test an offer, predefine eligible customers, assign treatment/control randoml
 
 ## Forecast handoff
 
-The local daily SKU-market table contains observed positive paid units. These are sales, not unconstrained demand. Stock availability, lost sales, lead times, unit costs, shelf lives and supplier minimums are absent. Missing dates remain absent; project 2 must justify its calendar treatment and label all inventory assumptions and simulated outcomes.
+The local daily SKU-market table contains observed positive paid units. These are sales, not unconstrained demand. Stock availability, lost sales, lead times, unit costs, shelf lives and supplier minimums are absent. Missing dates remain absent at this stage; the forecasting methodology explains its calendar treatment and labels all inventory assumptions and simulated outcomes.

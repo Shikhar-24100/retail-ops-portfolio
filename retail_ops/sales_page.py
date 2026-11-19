@@ -66,7 +66,7 @@ if len(window) != 2:
     st.info("Select both a start and an end date.")
     st.stop()
 start, end = window
-st.markdown('<div class="eyebrow">PROJECT 01 / SALES & CUSTOMER ANALYTICS</div>', unsafe_allow_html=True)
+st.markdown('<div class="eyebrow">SALES & CUSTOMER ANALYTICS</div>', unsafe_allow_html=True)
 st.title("Retail sales & customer behaviour")
 st.caption(f"{country} · {start:%d %b %Y} – {end:%d %b %Y} · Currency: GBP · Historical findings")
 if start.day != 1 or end != (pd.Timestamp(end) + pd.offsets.MonthEnd(0)).date():
@@ -152,7 +152,7 @@ with products:
     export(visible.drop(columns="label"), "products")
     st.subheader("Decisions to investigate")
     st.markdown(f"""
-- **Availability:** review the top 20 SKUs, which account for **{p.head(20).gross_sales_gbp.sum()/k.gross_sales_gbp:.1%}** of this selection's gross sales. Test replenishment rules in project 2 before claiming stockout reduction.
+- **Availability:** review the top 20 SKUs, which account for **{p.head(20).gross_sales_gbp.sum()/k.gross_sales_gbp:.1%}** of this selection's gross sales. Test replenishment rules in the inventory simulation before claiming stockout reduction.
 - **Retention:** compare recent one-time buyers with repeat buyers, then test a follow-up offer using a control group. Historical segment differences do not prove campaign uplift.
 - **Reversal exceptions:** investigate SKUs with high recorded reversals and check invoice-level context before changing assortment.
 - **Trading calendar:** use complete-month history to plan peak capacity. Validate any future plan with time-based forecast backtests.
@@ -178,7 +178,7 @@ with methods:
 - **Merchandise rule:** a five-digit SKU with up to two trailing letters. This is a documented heuristic; fees and manual adjustments are excluded.
 - **Duplicates:** remove identical invoice copies across source sheets. Retain repeated lines within an invoice because they may represent genuine order entries. The audit reports the sales sensitivity if duplicate candidates are dropped.
 - **Money:** integer thousandths of GBP preserve the source's three-decimal prices. No exchange-rate conversion, margin, or causal impact is claimed.
-- **Forecast handoff:** project 2 uses the same daily sales to compare forecasts with simple baselines, then replays inventory policies. Open Forecast & inventory in the navigation for its historical errors and simulated results.
+- **Forecast handoff:** the forecasting study uses the same daily sales to compare forecasts with simple baselines, then replays inventory policies. Open Forecast & inventory in the navigation for its historical errors and simulated results.
 """)
     st.subheader("Review the SQL behind each result")
     name = st.selectbox("Query", ["kpis", "monthly", "products", "segments", "cohorts", "countries", "price_variation"])

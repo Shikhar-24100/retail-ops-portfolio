@@ -1,4 +1,4 @@
-"""Run project 2: frozen selection, historical evaluation, inventory simulation."""
+"""Run frozen model selection, historical evaluation and inventory simulation."""
 import hashlib
 import json
 from pathlib import Path
@@ -16,7 +16,7 @@ OUT = ROOT / "reports/forecasting"
 def build():
     source = ROOT / "data/processed/daily_sku_sales.parquet"
     if not source.exists():
-        raise SystemExit("Build project 1 first: python -m retail_ops.pipeline")
+        raise SystemExit("Build the shared warehouse first: python -m retail_ops.pipeline")
     OUT.mkdir(exist_ok=True, parents=True)
     panel = make_panel(pd.read_parquet(source))
     print("Validation: eight methods, 16 weekly origins, 50 training-selected SKUs...", flush=True)
